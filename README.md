@@ -59,6 +59,8 @@ https://www.hackerrank.com/challenges/deforestation-1/problem
 ## Metodos de Solución
 -Este tipo de problema según mi punto de vista tiene que ver con teoria de Grafos y programación dinamica, donde se responde con encontrar  el costo minimo del flujo.
 (def findMinFlow)
+
+#####
 Los algoritmos base que se baso la solución fue , primero 
 Dado un gráfico conectado ponderado no dirigido, El Subárbol Realmente Especial se define como un subgráfico que consta de todos los nodos, Solo hay una ruta exclusiva desde un nodo a cualquier otro nodo.
 El subgrafo tiene un peso total mínimo (suma de todos los bordes) entre todos los subgrafos. Para crear el Subárbol realmente especial, se elige siempre el borde con el menor peso, el algoritmo base en que se baso fue el de  KRUSKAL(G), pseudocodigo:
@@ -70,6 +72,7 @@ El subgrafo tiene un peso total mínimo (suma de todos los bordes) entre todos l
 6       A = A ∪ {(u, v)}
 7       UNION(FIND-SET(u), FIND-SET(v))
 8 return A
+######
 
 Segundo Breadth First Search o BFS para un gráfico (def bfs)
 El primer recorrido transversal (o búsqueda) de un gráfico es similar al primer recorrido transversal de un árbol. El único problema aquí es que, a diferencia de los árboles, los gráficos pueden contener ciclos, por lo que podemos volver al mismo nodo nuevamente. Para evitar procesar un nodo más de una vez, utilizamos una matriz booleana visitada. Por simplicidad, se supone que todos los vértices son accesibles desde el vértice inicial.
