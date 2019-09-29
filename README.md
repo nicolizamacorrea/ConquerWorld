@@ -80,16 +80,10 @@ Segundo Breadth First Search o BFS para un gráfico (def bfs)
 El primer recorrido transversal (o búsqueda) de un gráfico es similar al primer recorrido transversal de un árbol. El único problema aquí es que, a diferencia de los árboles, los gráficos pueden contener ciclos, por lo que podemos volver al mismo nodo nuevamente. Para evitar procesar un nodo más de una vez, utilizamos una matriz booleana visitada. Por simplicidad, se supone que todos los vértices son accesibles desde el vértice inicial.
 
 
-Hagamos, sin pérdida de generalidad, los dos supuestos siguientes:
-- No hay nada en los vértices internos de la entrada.
-- El árbol es binario (para cada nodo interno con grado d 3, podemos hacer una cadena de
-d    1 nodos internos conectados por bordes de costo 0).
-
-Rootear el árbol arbitrariamente. Una idea natural es tratar de resolver esto mediante alguna  dinámica
+Por lo que Rootear el árbol arbitrariamente. Una idea natural es tratar de resolver esto mediante alguna  dinámica
 programación en el árbol, moviéndose hacia arriba desde las hojas hasta llegar a la raíz donde
-obtener la respuesta 
-Primero describamos el estado a usar y cómo usarlo
-Algunos problemas de programación dinámica tienen una recurrencia de esta forma:
+obtener la respuesta.
+Primero describamos el estado a usar y cómo usarlo Algunos problemas de programación dinámica tienen una recurrencia de esta forma:
 dp (i, j) = mink≤j {dp (i − 1, k) + C (k, j)}
 donde C (k, j) es alguna función de costo.
 
@@ -99,5 +93,5 @@ Deje que opt (i, j) sea el valor de k que minimiza la expresión anterior. Si op
 
 Esto nos permite resolver todos los estados de manera más eficiente. Digamos que calculamos opt (i, j) para algunos i y j fijos. Entonces para cualquier j ′ <j sabemos que opt (i, j ′) ≤opt (i, j). Esto significa que al computar opt (i, j ′), ¡no tenemos que considerar tantos puntos de división!
 
-Para minimizar el tiempo de ejecución, aplicamos la idea detrás de divide y vencerás. Primero, compute opt (i, n / 2). Luego, calcule opt (i, n / 4), sabiendo que es menor o igual que opt (i, n / 2) y opt (i, 3n / 4) sabiendo que es mayor o igual que opt (i , n / 2). Al hacer un seguimiento recursivo de los límites inferior y superior en opt, alcanzamos un tiempo de ejecución O (mnlogn). Cada posible valor de opt (i, j) solo aparece en logn diferentes nodos.
-total nodes = 1sink + 1source + 2*N + sum_of_sizes_X + sum_of_size
+Para minimizar el costo, aplicamos la idea detrás de divide y vencerás. Primero, compute opt (i, n / 2). Luego, calcule opt (i, n / 4), sabiendo que es menor o igual que opt (i, n / 2) y opt (i, 3n / 4) sabiendo que es mayor o igual que opt (i , n / 2). Al hacer un seguimiento recursivo de los límites inferior y superior en opt, alcanzamos un tiempo de ejecución. Cada posible valor de opt (i, j) solo aparece en logn diferentes nodos
+total nodes = 1sink + 1source + 2*N + sum_of_sizes_X + sum_of_size_Y
