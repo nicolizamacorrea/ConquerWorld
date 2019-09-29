@@ -66,14 +66,14 @@ Dado un gráfico conectado ponderado no dirigido, El Subárbol Realmente Especia
 El subgrafo tiene un peso total mínimo (suma de todos los bordes) entre todos los subgrafos. Para crear el Subárbol realmente especial, se elige siempre el borde con el menor peso, el algoritmo base en que se baso fue el de  KRUSKAL(G), 
 
 ### pseudocodigo:
-# 1 A = ∅
-# 2 foreach v ∈ G.V:
-# 3    MAKE-SET(v)
-# 4 foreach (u, v) in G.E ordered by weight(u, v), increasing:
-# 5    if FIND-SET(u) ≠ FIND-SET(v):
-# 6       A = A ∪ {(u, v)}
-# 7       UNION(FIND-SET(u), FIND-SET(v))
-# 8 return A
+########## 1 A = ∅
+########### 2 foreach v ∈ G.V:
+########### 3    MAKE-SET(v)
+########### 4 foreach (u, v) in G.E ordered by weight(u, v), increasing:
+########### 5    if FIND-SET(u) ≠ FIND-SET(v):
+########### 6       A = A ∪ {(u, v)}
+########### 7       UNION(FIND-SET(u), FIND-SET(v))
+########### 8 return A
 ######
 
 Segundo Breadth First Search o BFS para un gráfico (def bfs)
