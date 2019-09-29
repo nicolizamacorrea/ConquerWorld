@@ -1,5 +1,57 @@
-# ConquerWorld
-Problem C Conquer The World 
-Bwahahahahaha!!! Your nemesis, the dashingly handsome spy Waco Powers, has at last fallen to your secret volcano base’s deathtraps (or so you assume, being a little too busy to witness it firsthand). At long last, you are all set to CONQUER THE WORLD! Nothing will stand in your way! Well, nothing except a minor problem of logistics. Your evil armies have announced that they will not continue carving their relentless path of destruction across the puny nations of the world without being paid. And unfortunately you are running low on cash – a volcano lair has many wonderful qualities, but “reasonably affordable” is not one of them. You have had to pull funds from the travel budget to pay your ungrateful underlings. Now you are not sure how you will actually get your armies into position to CONQUER THE WORLD. You have a map of the nations of the world and all your available transport routes between them. Each route connects two nations and has a fixed cost per army that uses it. The routes are laid out such that there is exactly one way to travel between any two nations. You know the current position of each of your armies and how many you will need to place permanently in each nation in order to subjugate it. How can you move the armies into place as cheaply as possible so you can CONQUER THE WORLD? 
+Conquer The World
+2018 - Problem C - Conquer The World
 
-Input The first line of input contains an integer n (1 ≤ n ≤ 250 000), the number of nations. This is followed by n − 1 lines, each containing three integers u, v, and c (1 ≤ u, v ≤ n, 1 ≤ c ≤ 106 ), indicating that there is a bidirectional route connecting nations u and v, which costs c per army to use. Finally, another n lines follow, the i th of which contains two non-negative integers xi and yi , indicating that there are currently xi armies in nation i, and you need at least yi armies to end up in that nation in the final configuration. The total number of armies (the sum of the xi values) is at least the sum of the yi values, and no more than 106
+Comenzando 🚀
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+Mira Deployment para conocer como desplegar el proyecto.
+
+Pre-requisitos 📋
+Que cosas necesitas para instalar el software y como instalarlas
+
+Da un ejemplo
+Instalación 🔧
+Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose
+
+Dí cómo será ese paso
+
+Da un ejemplo
+Y repite
+
+hasta finalizar
+Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo
+
+Ejecutando las pruebas ⚙️
+Explica como ejecutar las pruebas automatizadas para este sistema
+
+Analice las pruebas end-to-end 🔩
+Explica que verifican estas pruebas y por qué
+
+Da un ejemplo
+Y las pruebas de estilo de codificación ⌨️
+Explica que verifican estas pruebas y por qué
+
+Da un ejemplo
+Deployment 📦
+Agrega notas adicionales sobre como hacer deploy
+
+Construido con 🛠️
+Menciona las herramientas que utilizaste para crear tu proyecto
+
+Dropwizard - El framework web usado
+Maven - Manejador de dependencias
+ROME - Usado para generar RSS
+Contribuyendo 🖇️
+Por favor lee el CONTRIBUTING.md para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+
+Wiki 📖
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra Wiki
+
+Versionado 📌
+Usamos SemVer para el versionado. Para todas las versiones disponibles, mira los tags en este repositorio.
+
+
+
+Lenguaje
+Python 3.7 
+
