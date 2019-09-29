@@ -1,6 +1,7 @@
 # Conquer The World
 
-Input: La primera línea de entrada contiene un número entero n (1 ≤ n ≤ 250 000), el número de naciones. Esto es seguido
+### Input:
+La primera línea de entrada contiene un número entero n (1 ≤ n ≤ 250 000), el número de naciones. Esto es seguido
 por n - 1 líneas, cada una con tres enteros u, v y c (1 ≤ u, v ≤ n, 1 ≤ c ≤ 106
 ), Indicando que
 hay una ruta bidireccional que conecta las naciones u y v, que cuesta c por ejército para usar.
@@ -9,7 +10,7 @@ th de los cuales contiene dos enteros no negativos xi y yi, indicando
 que actualmente hay xi ejércitos en la nación i, y se necesitan al menos ejércitos yi para terminar en esa nación en
 La configuración final. El número total de ejércitos (la suma de los valores de xi) es al menos la suma de los
 valores de yi, y no más de 106.
-Salida
+### Salida
 Muestre el costo mínimo para mover sus ejércitos de modo que haya al menos yi ejércitos en la nación i para todo i.
 
 ## Package
